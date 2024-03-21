@@ -1,0 +1,7 @@
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["./main.D1g-cG_V.js","./entry.CLoyrU71.js","./entry.DFWKYVy6.css","./icons-24.B6OMqZ6R.js"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}
+import{Y as l,u as m,r as _,Z as v,k as f,o as n,c as i,t as c,E as u,a as y,B as g}from"./entry.CLoyrU71.js";const d={main:()=>l(()=>import("./main.D1g-cG_V.js"),__vite__mapDeps([0,1,2]),import.meta.url).then(e=>e.default||e),"icons-24":()=>l(()=>import("./icons-24.B6OMqZ6R.js"),__vite__mapDeps([3,1,2]),import.meta.url).then(e=>e.default||e)},h="",w="",x="icons";function B(e){return e.toLowerCase().replace(/\.svg$/,"").replace(/[^a-z0-9-:]/g,"-").replace(/:/g,"--")}const p=async e=>{let[t,s]=e.split("/");s||(s=t,t=x);const a=d[t]?await d[t]():"";return{sprite:t,icon:s,url:a+`#${B(s)}`,class:`${h} ${w}${t}`}},C=["viewBox"],S={key:0},E={key:1},k=["href"],P=m({__name:"svg-icon",props:{name:{type:String,required:!0},title:{type:String,default:null},desc:{type:String,default:null},viewBox:{type:String,default:null,validator(e){return e.split(" ").every(t=>!isNaN(parseInt(t)))}}},async setup(e){let t,s;const a=e,r=_({url:"",class:""});return r.value=([t,s]=v(()=>p(a.name)),t=await t,s(),t),f(()=>a.name,async o=>{r.value=await p(o)}),(o,N)=>(n(),i("svg",{viewBox:e.viewBox,class:g(r.value.class)},[e.title?(n(),i("title",S,c(e.title),1)):u("",!0),e.desc?(n(),i("desc",E,c(e.desc),1)):u("",!0),y("use",{href:r.value.url},null,8,k)],10,C))}});export{P as _};
