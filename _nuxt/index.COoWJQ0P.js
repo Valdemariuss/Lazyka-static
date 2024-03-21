@@ -1,1 +1,0 @@
-import{c as e,o,a as s,_ as t}from"./entry.CLoyrU71.js";const c={class:"container--small"},n=s("h2",null,"Help",-1),a=[n];function r(l,d){return o(),e("div",c,a)}const _={},f=t(_,[["render",r]]);export{f as default};
